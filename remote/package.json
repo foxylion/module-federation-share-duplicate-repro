@@ -1,0 +1,37 @@
+{
+  "name": "remote",
+  "private": true,
+  "scripts": {
+    "dev:3001": "PUBLIC_PORT=3001 rsbuild dev",
+    "dev:3002": "PUBLIC_PORT=3002 rsbuild dev",
+    "dev:3003": "PUBLIC_PORT=3003 rsbuild dev",
+    "dev:3004": "PUBLIC_PORT=3004 rsbuild dev",
+    "dev:3005": "PUBLIC_PORT=3005 rsbuild dev",
+    "dev:3006": "PUBLIC_PORT=3006 rsbuild dev",
+    "dev:3007": "PUBLIC_PORT=3007 rsbuild dev",
+    "dev:3008": "PUBLIC_PORT=3008 rsbuild dev",
+    "dev:3009": "PUBLIC_PORT=3009 rsbuild dev",
+    "dev:3010": "PUBLIC_PORT=3010 rsbuild dev",
+    "preview:3001": "PUBLIC_PORT=3001 rsbuild build && PUBLIC_PORT=3001 rsbuild preview",
+    "preview:3002": "PUBLIC_PORT=3002 rsbuild build && PUBLIC_PORT=3002 rsbuild preview",
+    "preview:3003": "PUBLIC_PORT=3003 rsbuild build && PUBLIC_PORT=3003 rsbuild preview",
+    "preview:3004": "PUBLIC_PORT=3004 rsbuild build && PUBLIC_PORT=3004 rsbuild preview",
+    "preview:3005": "PUBLIC_PORT=3005 rsbuild build && PUBLIC_PORT=3005 rsbuild preview",
+    "preview:3006": "PUBLIC_PORT=3006 rsbuild build && PUBLIC_PORT=3006 rsbuild preview",
+    "preview:3007": "PUBLIC_PORT=3007 rsbuild build && PUBLIC_PORT=3007 rsbuild preview",
+    "preview:3008": "PUBLIC_PORT=3008 rsbuild build && PUBLIC_PORT=3008 rsbuild preview",
+    "preview:3009": "PUBLIC_PORT=3009 rsbuild build && PUBLIC_PORT=3009 rsbuild preview",
+    "preview:3010": "PUBLIC_PORT=3010 rsbuild build && PUBLIC_PORT=3010 rsbuild preview"
+  },
+  "devDependencies": {
+    "@module-federation/rsbuild-plugin": "^0.10.0",
+    "@rsbuild/core": "^1.2.18",
+    "@rsbuild/plugin-react": "^1.1.1",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
