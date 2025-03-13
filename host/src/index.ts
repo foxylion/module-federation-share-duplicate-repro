@@ -1,13 +1,20 @@
-import { registerRemotes, loadRemote } from "@module-federation/runtime";
+import { loadRemote, init } from "@module-federation/runtime";
 
-for (let port = 3001; port <= 3010; port++) {
-  registerRemotes([
-    {
-      name: `remote_${port}`,
-      entry: `http://localhost:${port}/mf-manifest.json`,
-    },
-  ]);
-}
+init({
+  name: "host",
+  remotes: [
+    { name: "remote_3001", entry: "http://localhost:3001/mf-manifest.json" },
+    { name: "remote_3002", entry: "http://localhost:3002/mf-manifest.json" },
+    { name: "remote_3003", entry: "http://localhost:3003/mf-manifest.json" },
+    { name: "remote_3004", entry: "http://localhost:3004/mf-manifest.json" },
+    { name: "remote_3005", entry: "http://localhost:3005/mf-manifest.json" },
+    { name: "remote_3006", entry: "http://localhost:3006/mf-manifest.json" },
+    { name: "remote_3007", entry: "http://localhost:3007/mf-manifest.json" },
+    { name: "remote_3008", entry: "http://localhost:3008/mf-manifest.json" },
+    { name: "remote_3009", entry: "http://localhost:3009/mf-manifest.json" },
+    { name: "remote_3010", entry: "http://localhost:3010/mf-manifest.json" },
+  ],
+});
 
 const root = document.getElementById("root-3000");
 
