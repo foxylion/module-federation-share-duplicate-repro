@@ -9,31 +9,14 @@ export default defineConfig({
     }),
     pluginModuleFederation({
       name: `remote_${process.env.PUBLIC_PORT}`,
-      dts: false,
       runtimePlugins: [],
       exposes: {
         "./App": "./src/App.tsx",
-        "./LazyApp": "./src/LazyApp.ts",
       },
       shared: {
-        react: {
-          singleton: true,
-          shareKey: "react:19.0.0",
-          version: "19.0.0",
-          requiredVersion: "19.0.0",
-        },
-        "react-dom": {
-          singleton: true,
-          shareKey: "react-dom:19.0.0",
-          version: "19.0.0",
-          requiredVersion: "19.0.0",
-        },
-        "react-dom/client": {
-          singleton: true,
-          shareKey: "react-dom/client:19.0.0",
-          version: "19.0.0",
-          requiredVersion: "19.0.0",
-        },
+        react: { singleton: true },
+        "react-dom": { singleton: true },
+        "react-dom/client": { singleton: true },
       },
     }),
   ],

@@ -2,8 +2,8 @@
   "name": "host",
   "private": true,
   "scripts": {
-    "dev:3000": "rsbuild dev",
-    "preview:3000": "rsbuild build && rsbuild preview"
+    "dev": "rsbuild dev",
+    "preview": "rsbuild build && rsbuild preview"
   },
   "dependencies": {
     "@module-federation/runtime": "^0.10.0"
