@@ -1,4 +1,4 @@
-import { loadRemote, init } from "@module-federation/runtime";
+import { loadRemote, init, preloadRemote } from "@module-federation/runtime";
 
 init({
   name: "host",
@@ -14,7 +14,25 @@ init({
     { name: "remote_3009", entry: "http://localhost:3009/mf-manifest.json" },
     { name: "remote_3010", entry: "http://localhost:3010/mf-manifest.json" },
   ],
+  shared: {
+    axios: {},
+  },
 });
+
+void preloadRemote([
+  { nameOrAlias: "remote_3001", filter: () => false },
+  { nameOrAlias: "remote_3002", filter: () => false },
+  { nameOrAlias: "remote_3003", filter: () => false },
+  { nameOrAlias: "remote_3004", filter: () => false },
+  { nameOrAlias: "remote_3005", filter: () => false },
+  { nameOrAlias: "remote_3006", filter: () => false },
+  { nameOrAlias: "remote_3007", filter: () => false },
+  { nameOrAlias: "remote_3008", filter: () => false },
+  { nameOrAlias: "remote_3009", filter: () => false },
+  { nameOrAlias: "remote_3010", filter: () => false },
+]);
+
+void import("axios");
 
 const root = document.getElementById("root-3000");
 

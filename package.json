@@ -2,8 +2,8 @@
   "name": "module-federation-share-duplicate-repro",
   "private": true,
   "scripts": {
-    "dev": "pnpm run -r --workspace-concurrency=Infinity \"/^dev:.*/\"",
-    "preview": "pnpm run -r --workspace-concurrency=Infinity \"/^preview:.*/\""
+    "dev:host": "pnpm run -r dev",
+    "dev:remotes": "pnpm run -r --workspace-concurrency=Infinity \"/^dev:.*/\""
   },
   "devDependencies": {
     "@types/node": "^22.13.10",

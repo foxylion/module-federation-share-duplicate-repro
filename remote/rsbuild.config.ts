@@ -11,6 +11,7 @@ export default defineConfig({
       name: `remote_${process.env.PUBLIC_PORT}`,
       dts: false,
       runtimePlugins: [],
+      experiments: { externalRuntime: true },
       exposes: {
         "./App": "./src/App.tsx",
         "./LazyApp": "./src/LazyApp.ts",
