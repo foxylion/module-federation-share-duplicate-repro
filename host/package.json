@@ -6,7 +6,8 @@
     "preview": "rsbuild build && rsbuild preview"
   },
   "dependencies": {
-    "@module-federation/runtime": "^0.10.0"
+    "@module-federation/runtime": "^0.10.0",
+    "axios": "^1.8.3"
   },
   "devDependencies": {
     "@module-federation/rsbuild-plugin": "^0.10.0",

@@ -24,9 +24,7 @@ export default defineConfig({
       },
       exposes: {},
       shared: {
-        react: { singleton: true },
-        "react-dom": { singleton: true },
-        "react-dom/client": { singleton: true },
+        axios: { singleton: true },
       },
     }),
   ],

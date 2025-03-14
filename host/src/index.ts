@@ -1,3 +1,5 @@
+void import("axios");
+
 const root = document.getElementById("root-3000");
 
 const sequentialButton = document.createElement("button");
