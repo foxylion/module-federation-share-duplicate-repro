@@ -15,6 +15,7 @@ export default defineConfig({
         "./App": "./src/App.tsx",
         "./LazyApp": "./src/LazyApp.ts",
       },
+      shareStrategy: "loaded-first",
       shared: {
         react: {
           singleton: true,

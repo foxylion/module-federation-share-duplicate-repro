@@ -14,6 +14,7 @@ init({
     { name: "remote_3009", entry: "http://localhost:3009/mf-manifest.json" },
     { name: "remote_3010", entry: "http://localhost:3010/mf-manifest.json" },
   ],
+  shareStrategy: "loaded-first",
 });
 
 const root = document.getElementById("root-3000");
